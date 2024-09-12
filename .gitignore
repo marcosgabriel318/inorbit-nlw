@@ -1,4 +1,14 @@
-'functions/node_modules/'
+### Format1  ###
+node_modules/
 .vscode/
 .env
 biome.json
+
+### Format2  ###
+**/server/node_modules/**
+**/server/.vscode/**
+**/server/.env**
+**/server/biome.json**
+
+
+
