@@ -7,7 +7,7 @@ export const goals = pgTable('goals', {
     .$defaultFn(() => createId()), // algoritmo para criar ID únicos
   title: text('title').notNull(),
   desiredWeeklyFrequency: integer('desired_weekly_frequency').notNull(),
-  createAt: timestamp('created_at', { withTimezone: true })
+  createdAt: timestamp('created_at', { withTimezone: true })
     .notNull()
     .defaultNow(),
 })
